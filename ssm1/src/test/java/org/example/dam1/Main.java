@@ -19,5 +19,9 @@ public class Main {
 
         // 尝试再次调用 Bean 的方法
         myBean.doSomething();
+
+        TestZhuJie zhujie = new TestZhuJie();
+        zhujie.updateUser("testzhujielei");
+        zhujie.createUser("testzhujie2");
     }
 }
