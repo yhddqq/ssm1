@@ -1,7 +1,9 @@
 package org.example.service.impl;
 
+import org.example.controller.Code;
 import org.example.dao.BookDao;
 import org.example.domain.Book;
+import org.example.exception.SystemException;
 import org.example.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,6 +41,11 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book getById(Integer id) {
+        try {
+            int i = 1/0;
+        }catch (Exception e){
+            throw new SystemException(Code.SYSTEM_ERROR, "访问SYSTEM异常", e);
+        }
         return bookDao.getById(id);
     }
 
