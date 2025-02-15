@@ -41,7 +41,7 @@ public class BookController {
     public Result getById(@PathVariable Integer id) {
         Book book = bookService.getById(id);
         Integer code = book != null ? Code.GET_OK: Code.GET_ERROR;
-        String msg = book != null ? "" :"数据查询失败请重试!";
+        String msg = book != null ? "" :"数据查询结果为空!";
         //模拟异常
 //        int i = 1/0;
         return new Result(code, book, msg);
@@ -51,7 +51,7 @@ public class BookController {
     public Result getAll() {
         List<Book> bookList = bookService.getAll();
         Integer code = bookList != null ? Code.GET_OK: Code.GET_ERROR;
-        String msg = bookList != null ? "" :"数据查询失败请重试!";
+        String msg = bookList != null ? "" :"数据查询结果为空!";
         return new Result(code, bookList, msg);
     }
 }
