@@ -12,11 +12,12 @@
     </parent>
 
     <groupId>my.testdam</groupId>
-    <artifactId>boot4_mybatis</artifactId>
+    <artifactId>boot5_ssm</artifactId>
+
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>boot4_mybatis</name>
-    <description>boot4_mybatis</description>
+    <name>boot5_ssm</name>
+    <description>boot5_ssm</description>
 
     <url/>
 
@@ -40,6 +41,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>

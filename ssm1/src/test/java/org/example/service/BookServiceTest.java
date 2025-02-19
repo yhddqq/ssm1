@@ -19,6 +19,7 @@ public class BookServiceTest {
 
     @Autowired
     private BookService bookService;
+
     @Autowired
     private BookDao bookDao;
 

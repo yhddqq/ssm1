@@ -9,6 +9,7 @@
         <module name="boot3" />
         <module name="boot2" />
         <module name="ssm1" />
+        <module name="boot5_ssm" />
         <module name="boot4_mybatis" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="boot2" options="-parameters" />
       <module name="boot3" options="-parameters" />
       <module name="boot4_mybatis" options="-parameters" />
+      <module name="boot5_ssm" options="-parameters" />
     </option>
   </component>
 </project>
